@@ -1,7 +1,8 @@
-Check it out [Here](caitisgreat.github.io/spotify-preview)
 
 Problem Statement
 ---
+Check it out [here](https://caitisgreat.github.io/spotify-preview)
+
 Allow the user to search for a list of artists through the Spotify API using AngularJS.
 After retrieving a list of artists order them by popularity.
 Allow the user to get songs the artist has recorded by clicking on the artist's name.  Songs should appear below the artist's name.
