@@ -1,3 +1,5 @@
+Check it out [Here](caitisgreat.github.io/spotify-preview)
+
 Problem Statement
 ---
 Allow the user to search for a list of artists through the Spotify API using AngularJS.
