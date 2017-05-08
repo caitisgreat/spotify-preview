@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div class="row">
+      <span>Viewing page {{data.paging.page + 1}} of {{data.paging.totalPages ? data.paging.totalPages : 1}}, Total Records : {{data.artists.total ? data.artists.total : 0}}</span>
+      <a ng-click="pageDown()" ng-hide="data.paging.page === 0" href="">prev</a>&nbsp;<a ng-click="pageUp()" ng-hide="data.paging.totalPages < 1 || (data.paging.totalPages -1) === data.paging.page" href="">next</a>
+    </div>
+    <div class="row">
+      <ul class="list-group">
+        <li class="list-group-item" ng-repeat="artist in data.artists.items | orderBy: artist.popularity">
+          <a href="" ng-click="getArtistTracks($index, artist.id)">{{artist.name}}</a>
+            <ul ng-show="artist.tracks.length !=null">
+              <li ng-repeat="track in artist.tracks | orderBy: track.popularity">
+                <a href="" ng-click="playAudio(track.preview_url)">{{track.name}}</a>
+              </li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
