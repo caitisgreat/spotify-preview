@@ -8,6 +8,6 @@ Allow the user to play a preview of a song by clicking on the track name.
 Use the following components to complete this task (AngularJS, the Spotify API, Twitter Bootstrap)
 You may use these sources of documentation:
 
-https://docs.angularjs.org/api/
-http://getbootstrap.com/css/
-https://developer.spotify.com/web-api/
+* https://docs.angularjs.org/api/
+* http://getbootstrap.com/css/
+* https://developer.spotify.com/web-api/
